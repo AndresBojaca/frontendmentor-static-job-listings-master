@@ -1,0 +1,103 @@
+.job__card:nth-child(2):has(.job__card--badje-new):has(.job__card--badje-featured):before, 
+.job__card:nth-child(3):has(.job__card--badje-new):has(.job__card--badje-featured):before {
+    content: '';
+    width: 5px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: var(--dark-cyan);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.job__card {
+    background-color: white;
+    padding: 20px 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: 0 5px 10px #5ba4a417;
+    animation: 0.2s ease-out 0s 1 fadeInScale;
+}
+.job__card::after {
+    content: '';
+    width: 95%;
+    background: #5ba4a446;
+    height: 10px;
+    margin: auto;
+    position: absolute;
+    bottom: -3px;
+    left: 25px;
+    filter: blur(9px);
+    z-index: -1;
+}
+.job__card--logo{
+    margin-right: 20px;
+}
+.job__card__company--text{
+    font-size: 18px;
+    color: var(--dark-cyan);
+}
+.job__card__role--text{
+    font-size: 22px;
+    color: black;
+    transition: all .3s;
+}
+.job__card__role--text:hover{
+    color: var(--dark-cyan);
+    cursor: pointer;
+}
+.job__card__features--text{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--dark-grayish-cyan);
+}
+.job__card__features--text .dot{
+    padding: 0 12px;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0.5;
+}
+.job__card--badje-new {
+    background-color: var(--dark-cyan);
+    color: white;
+    padding: 8px 10px 6px 10px;
+    border-radius: 50px;
+    margin: 0 10px;
+    font-size: 15px;
+}
+.job__card--badje-featured{
+    background-color: var(--very-dark-grayish-cyan);
+    color: white;
+    padding: 8px 10px 6px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.job__card--tools{
+    display: flex;
+    margin-left: auto;
+}
+.job__card--tools .tool{
+    background-color: #5ba4a41a;
+    color: var(--dark-cyan);
+    padding: 10px;
+    margin: 0 6px;
+    font-weight: bold;
+    transition: all .3s;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.job__card--tools .tool:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 1440px){
+    .job__card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }

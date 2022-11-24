@@ -1,0 +1,94 @@
+.search__card {
+    width: 100%;
+    background: white;
+    position: relative;
+    margin-top: -120px;
+    border-radius: 5px;
+    display: flex;
+    transition: all .3s;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 10px #5ba4a417;
+}
+
+.search__card::after {
+    content: '';
+    width: 95%;
+    background: #5ba4a446;
+    height: 10px;
+    margin: auto;
+    position: absolute;
+    bottom: -3px;
+    left: 25px;
+    filter: blur(9px);
+    z-index: -1;
+}
+
+.search__card .tool {
+    animation: 0.1s ease-out 0s 1 fadeInScale;
+    background-color: #5ba4a41a;
+    color: var(--dark-cyan);
+    margin: 5px;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search__card .tool:hover{
+    transform: scale(1.05);
+}
+.search__card .tool span{
+    padding: 10px;
+}
+.close-btn {
+    background: var(--dark-cyan);
+    height: 100%;
+    padding: 10px;
+    right: -35px;
+    top: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-btn:hover{
+    background: var(--very-dark-grayish-cyan);
+}
+.clear-btn {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.clear-btn h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--dark-cyan);
+    margin: 0;
+}
+.clear-btn:hover h1{
+    cursor: pointer;
+    border-bottom: 2px solid var(--dark-cyan);
+}
+
+.tools-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+
