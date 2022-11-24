@@ -8,7 +8,7 @@ main{
   background: url('./assets/images/bg-header-desktop.svg'), var(--dark-cyan);
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1024px){
   main{
     --main-custom-margin: 1rem;
     margin: 5rem var(--main-custom-margin);

@@ -89,7 +89,7 @@
     gap: 10px;
     padding: 20px;
 }
-@media (max-width: 1440px){
+@media (max-width: 1024px){
 
     .search__card{
         height: 100% !important;
