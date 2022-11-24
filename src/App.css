@@ -13,4 +13,7 @@ main{
     --main-custom-margin: 1rem;
     margin: 5rem var(--main-custom-margin);
   }
+  .attribution{
+    text-align: center;
+  }
 }

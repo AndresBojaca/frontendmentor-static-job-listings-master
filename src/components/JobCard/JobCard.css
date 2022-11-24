@@ -85,7 +85,7 @@
     background-color: #5ba4a41a;
     color: var(--dark-cyan);
     padding: 10px;
-    margin: 0 6px;
+    margin: 5px 6px;
     font-weight: bold;
     transition: all .3s;
     border-radius: 3px;
@@ -99,5 +99,23 @@
     .job__card {
         flex-direction: column;
         align-items: flex-start;
+        padding: 30px 30px 25px 30px;
+        margin-bottom: 3rem;
+    }
+    .job__card--tools {
+        display: flex;
+        margin-left: 0;
+        flex-wrap: wrap;
+        border-top: 1px solid #00000026;
+        padding-top: 15px;
+        width: 100%;
+    }
+    .job__card--logo {
+        margin-right: 20px;
+        position: absolute;
+        top: -25px;
+    }
+    .job__card--logo img{
+        width: 60%;
     }
   }
